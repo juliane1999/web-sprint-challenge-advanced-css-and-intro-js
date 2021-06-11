@@ -143,6 +143,9 @@ button:hover{
     .title-container div{
         width:100%;
     }
+    .title-container hr{
+        width:100%;
+    }
     .artists-container{
         flex-flow: column wrap;
         justify-content: center;
@@ -157,5 +160,4 @@ button:hover{
     .bio{
         font-size:1rem;
     }
-    
 }
