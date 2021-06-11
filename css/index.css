@@ -150,6 +150,7 @@ button:hover{
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom:15%;
     }
     .artist{
         width:75%;
