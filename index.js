@@ -248,7 +248,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array,string){
   let newArray = [];
   for(let i = 0; i < array.length; i++){
-    if(array[i].years.includes('190') && array[i].years.includes('- 19')){
+    if(array[i].years.includes('190') || array[i].years.includes('- 199')){
       newArray.push(array[i].name);
     }
   }
@@ -267,7 +267,7 @@ function get20s(array,string){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array,string,paintings){
+function removeArtist(array,string){
        array.splice (string,1);
    return array.length;
 }
@@ -290,8 +290,16 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array,string){
-    array.push(string);
+function addArtist(array){
+  const myBio = { 
+    id: 20,
+    name: 'Juliane Vo',
+    years: '1999',
+    genre: 'Web Dev',
+    nationality: 'American',
+    bio: 'lorem ipsum'
+  }  
+    array.push(myBio);
     return array;
   }
 
